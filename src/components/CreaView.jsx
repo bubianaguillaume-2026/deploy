@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { exportCalendar } from '../utils/exportCSV'
+import CycleWidget from './CycleWidget'
 
 const PLATFORMS = [
   { id: 'youtube',  label: 'YouTube',   cls: 'platform-yt',  icon: '▶' },
@@ -19,7 +20,7 @@ const CONTENT_TYPES = ['Vidéo longue', 'Short / Reel', 'Post', 'Story', 'Épiso
 
 const getPlatform = id => PLATFORMS.find(p => p.id === id) || PLATFORMS[0]
 
-export default function CreaView({ data, updateData }) {
+export default function CreaView({ data, updateData, cycleData }) {
   const [tab, setTab] = useState('pipeline')
 
   const [pipeForm, setPipeForm] = useState({
@@ -98,6 +99,8 @@ export default function CreaView({ data, updateData }) {
           ))}
         </div>
       </div>
+
+      <CycleWidget cycleData={cycleData} mode="crea" />
 
       <div className="tab-bar">
         {TABS.map(t => (

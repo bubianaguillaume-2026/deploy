@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import { exportRevenues, exportProjects } from '../utils/exportCSV'
+import CycleWidget from './CycleWidget'
 
 const CATEGORIES = ['Ventes', 'Prestation', 'Remboursement', 'Autre']
 
 const fmt = n =>
   new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(n || 0)
 
-export default function AFKView({ data, updateData }) {
+export default function AFKView({ data, updateData, cycleData }) {
   const [tab, setTab] = useState('overview')
 
   const [revenueForm, setRevenueForm] = useState({
@@ -141,6 +142,8 @@ export default function AFKView({ data, updateData }) {
         <div className="mode-hero-title">AFK</div>
         <div className="mode-hero-subtitle">E-commerce & Business</div>
       </div>
+
+      <CycleWidget cycleData={cycleData} mode="afk" />
 
       <div className="tab-bar">
         {TABS.map(t => (

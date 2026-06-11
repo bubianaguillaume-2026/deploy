@@ -16,6 +16,10 @@ const defaults = {
   crea: {
     pipeline: [],
     calendar: []
+  },
+  cycle: {
+    lastPeriodDate: '',
+    cycleLength: 28
   }
 }
 
@@ -31,7 +35,8 @@ export function loadData() {
         ...saved.afk,
         kpis: { ...defaults.afk.kpis, ...saved.afk?.kpis }
       },
-      crea: { ...defaults.crea, ...saved.crea }
+      crea: { ...defaults.crea, ...saved.crea },
+      cycle: { ...defaults.cycle, ...saved.cycle }
     }
   } catch {
     return defaults

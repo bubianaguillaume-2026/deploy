@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import CycleWidget from './CycleWidget'
 
 function useNow() {
   const [now, setNow] = useState(new Date())
@@ -9,7 +10,7 @@ function useNow() {
   return now
 }
 
-export default function SalarieeView({ data, updateData }) {
+export default function SalarieeView({ data, updateData, cycleData }) {
   const now = useNow()
   const [newTodo, setNewTodo] = useState('')
 
@@ -65,6 +66,8 @@ export default function SalarieeView({ data, updateData }) {
         <div className="mode-hero-title">SALARIÉE</div>
         <div className="mode-hero-subtitle" style={{ textTransform: 'capitalize' }}>{dateStr}</div>
       </div>
+
+      <CycleWidget cycleData={cycleData} mode="salariee" />
 
       <div className="grid-2 mb-24">
         {/* Clock + work progress */}

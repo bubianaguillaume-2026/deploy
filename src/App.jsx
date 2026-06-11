@@ -3,6 +3,7 @@ import Header from './components/Header'
 import SalarieeView from './components/SalarieeView'
 import AFKView from './components/AFKView'
 import CreaView from './components/CreaView'
+import CycleView from './components/CycleView'
 import { loadData, saveData, loadMode, saveMode } from './utils/storage'
 
 export const MODES = {
@@ -23,6 +24,12 @@ export const MODES = {
     color: '#EC4899',
     colorRgb: '236, 72, 153',
     bg: '#0d0008'
+  },
+  cycle: {
+    label: 'CYCLE',
+    color: '#F43F5E',
+    colorRgb: '244, 63, 94',
+    bg: '#0d0205'
   }
 }
 
@@ -53,24 +60,33 @@ export default function App() {
         backgroundColor: m.bg
       }}
     >
-      <Header mode={mode} setMode={setMode} modes={MODES} />
+      <Header mode={mode} setMode={setMode} modes={MODES} cycleData={data.cycle} />
       <main className="main-content">
         {mode === 'salariee' && (
           <SalarieeView
             data={data.salariee}
             updateData={u => updateData('salariee', u)}
+            cycleData={data.cycle}
           />
         )}
         {mode === 'afk' && (
           <AFKView
             data={data.afk}
             updateData={u => updateData('afk', u)}
+            cycleData={data.cycle}
           />
         )}
         {mode === 'crea' && (
           <CreaView
             data={data.crea}
             updateData={u => updateData('crea', u)}
+            cycleData={data.cycle}
+          />
+        )}
+        {mode === 'cycle' && (
+          <CycleView
+            data={data.cycle}
+            updateData={u => updateData('cycle', u)}
           />
         )}
       </main>
