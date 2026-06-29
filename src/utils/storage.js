@@ -11,7 +11,9 @@ const defaults = {
     revenues: [],
     invoices: [],
     projects: [],
-    kpis: { monthlyTarget: 0, ordersTarget: 0 }
+    kpis: { monthlyTarget: 0, ordersTarget: 0 },
+    monthlyTargets: {},
+    commercialEvents: []
   },
   crea: {
     pipeline: [],
@@ -33,7 +35,9 @@ export function loadData() {
       afk: {
         ...defaults.afk,
         ...saved.afk,
-        kpis: { ...defaults.afk.kpis, ...saved.afk?.kpis }
+        kpis: { ...defaults.afk.kpis, ...saved.afk?.kpis },
+        monthlyTargets: saved.afk?.monthlyTargets || {},
+        commercialEvents: saved.afk?.commercialEvents || []
       },
       crea: { ...defaults.crea, ...saved.crea },
       cycle: { ...defaults.cycle, ...saved.cycle }

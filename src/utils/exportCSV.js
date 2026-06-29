@@ -37,3 +37,29 @@ export function exportCalendar(calendar) {
   const csv = toCSV(calendar, ['date', 'title', 'platform', 'type', 'status'])
   downloadCSV(csv, `CREA-planning-${new Date().toISOString().slice(0, 10)}.csv`)
 }
+
+export function exportMonthlyTargets(monthlyTargets) {
+  const rows = Object.entries(monthlyTargets)
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([mois, mt]) => ({
+      mois,
+      objectif: mt.target || 0,
+      realise: mt.actual || 0,
+      ecart: (mt.actual || 0) - (mt.target || 0)
+    }))
+  const csv = toCSV(rows, ['mois', 'objectif', 'realise', 'ecart'])
+  downloadCSV(csv, `AFK-objectifs-${new Date().toISOString().slice(0, 10)}.csv`)
+}
+
+export function exportActionPlan(actions) {
+  const rows = actions.map(a => ({
+    deadline: a.deadline,
+    delai: `J-${a.daysBeforeEvent}`,
+    action: a.label,
+    evenement: a.eventName,
+    date_evenement: a.eventDate,
+    statut: a.done ? 'Fait' : 'À faire'
+  }))
+  const csv = toCSV(rows, ['deadline', 'delai', 'action', 'evenement', 'date_evenement', 'statut'])
+  downloadCSV(csv, `AFK-retroplanning-${new Date().toISOString().slice(0, 10)}.csv`)
+}

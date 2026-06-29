@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { exportRevenues, exportProjects } from '../utils/exportCSV'
 import CycleWidget from './CycleWidget'
+import YearPlan from './YearPlan'
 
 const CATEGORIES = ['Ventes', 'Prestation', 'Remboursement', 'Autre']
 
@@ -133,7 +134,8 @@ export default function AFKView({ data, updateData, cycleData }) {
     { key: 'overview', label: 'Vue globale' },
     { key: 'revenues', label: 'Revenus' },
     { key: 'invoices', label: 'Factures' },
-    { key: 'budget', label: 'Budget projets' }
+    { key: 'budget', label: 'Budget projets' },
+    { key: 'annual', label: 'Plan annuel' }
   ]
 
   return (
@@ -532,6 +534,10 @@ export default function AFKView({ data, updateData, cycleData }) {
             </>
           )}
         </>
+      )}
+      {/* ── PLAN ANNUEL ── */}
+      {tab === 'annual' && (
+        <YearPlan data={data} updateData={updateData} />
       )}
     </div>
   )
