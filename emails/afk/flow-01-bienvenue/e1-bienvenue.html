@@ -31,17 +31,18 @@
   .subtitle  { font-family: 'Montserrat', Arial, Helvetica, sans-serif; }
   .body-copy { font-family: Arial, Helvetica, sans-serif; }
 
-  .stamp   { transform: rotate(-6deg); -webkit-transform: rotate(-6deg); -ms-transform: rotate(-6deg); }
-  .ticket  { transform: rotate(-1.4deg); -webkit-transform: rotate(-1.4deg); -ms-transform: rotate(-1.4deg); }
+  .tilt-l  { transform: rotate(-4deg); -webkit-transform: rotate(-4deg); -ms-transform: rotate(-4deg); }
+  .tilt-r  { transform: rotate(3deg); -webkit-transform: rotate(3deg); -ms-transform: rotate(3deg); }
+  .tilt-s  { transform: rotate(-1.6deg); -webkit-transform: rotate(-1.6deg); -ms-transform: rotate(-1.6deg); }
 
   @media screen and (max-width: 600px) {
     .wrap { width: 100% !important; }
     .px { padding-left: 20px !important; padding-right: 20px !important; }
     .hero-pad { padding: 32px 24px 28px !important; }
     .h1 { font-size: 25px !important; line-height: 1.26 !important; }
-    .card-pad { padding: 18px 18px !important; }
     .code-text { font-size: 22px !important; letter-spacing: 3px !important; }
     .cta-btn a { display: block !important; }
+    .drop-letter { font-size: 46px !important; }
   }
 
   @media (prefers-color-scheme: dark) {
@@ -82,34 +83,17 @@
 
     <!-- ============ HERO ============ -->
     <tr>
-      <td class="bg-cream hero-pad" bgcolor="#fef2c9" style="background-color:#fef2c9; padding:52px 40px 34px 40px;">
+      <td class="bg-cream hero-pad" bgcolor="#fef2c9" style="background-color:#fef2c9; padding:56px 40px 40px 40px;">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
-            <td align="center" style="padding-bottom:24px;">
-              <!--[if mso]>
-              <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td>
-              <![endif]-->
-              <table role="presentation" class="stamp" cellpadding="0" cellspacing="0" border="0" style="border:2px solid #5d1808;">
-                <tr>
-                  <td width="116" height="116" align="center" valign="middle" style="width:116px; height:116px; background-color:#e0a42e;">
-                    <span class="display" style="font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:17px; line-height:1.2; color:#1e1d1d;">Bienvenue<br>chez AFK</span>
-                  </td>
-                </tr>
-              </table>
-              <!--[if mso]>
-              </td></tr></table>
-              <![endif]-->
-            </td>
-          </tr>
-          <tr>
             <td align="center">
-              <h1 class="display h1 tx-ink" style="margin:0; font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:28px; line-height:1.26; color:#1e1d1d; text-align:center;">
+              <h1 class="display h1 tx-ink" style="margin:0; font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:29px; line-height:1.26; color:#1e1d1d; text-align:center;">
                 Tu es au bon endroit,<br>et tu n&rsquo;es plus <span style="color:#e0a42e;">seul.e</span>
               </h1>
             </td>
           </tr>
           <tr>
-            <td align="center" style="padding-top:14px;">
+            <td align="center" style="padding-top:16px;">
               <span style="display:inline-block; width:44px; height:4px; background-color:#e0a42e; font-size:0; line-height:0;">&nbsp;</span>
             </td>
           </tr>
@@ -124,23 +108,51 @@
       </td>
     </tr>
 
-    <!-- ============ BODY ============ -->
-    <tr>
-      <td class="bg-white px" bgcolor="#ffffff" style="background-color:#ffffff; padding:40px 40px 6px 40px;">
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr><td bgcolor="#ffffff" style="background-color:#ffffff; padding:0; line-height:0; font-size:0;"><table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td></tr></table></td></tr>
 
+    <!-- ============ CHAPITRE I ============ -->
+    <tr>
+      <td class="bg-white px" bgcolor="#ffffff" style="background-color:#ffffff; padding:38px 40px 6px 40px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
-            <td class="body-copy tx-ink" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.65; color:#1e1d1d; padding-bottom:16px;">
-              Bienvenue dans la Brigade,
+            <td style="padding-bottom:22px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td width="52" valign="middle">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="tilt-l"><tr>
+                      <td width="44" height="44" align="center" valign="middle" bgcolor="#e0a42e" style="width:44px; height:44px; background-color:#e0a42e; font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:18px; color:#1e1d1d;">I</td>
+                    </tr></table>
+                  </td>
+                  <td width="12">&nbsp;</td>
+                  <td valign="middle" class="subtitle" style="font-family:'Montserrat', Arial, Helvetica, sans-serif; font-weight:700; font-size:11px; letter-spacing:2px; color:#5d1808; text-transform:uppercase;">Chapitre I<br><span class="display" style="font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:700; font-size:19px; letter-spacing:0; color:#0f3626; text-transform:none;">Ton histoire commence ici</span></td>
+                </tr>
+              </table>
             </td>
           </tr>
+
+          <!-- lettrine -->
+          <tr>
+            <td style="padding-bottom:16px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td valign="top" style="padding-right:10px;">
+                    <span class="display drop-letter" style="font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:56px; line-height:0.82; color:#e0a42e;">B</span>
+                  </td>
+                  <td valign="middle" class="body-copy tx-ink" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.65; color:#1e1d1d;">
+                    ienvenue dans la Brigade,
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
           <tr>
             <td class="body-copy tx-ink" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.65; color:#1e1d1d; padding-bottom:16px;">
               Si tu es l&agrave;, c&rsquo;est peut-&ecirc;tre parce que tu as cherch&eacute; longtemps. Des r&eacute;ponses, une explication, quelqu&rsquo;un qui prenne enfin le temps de t&rsquo;&eacute;couter sans te dire que tout va bien alors que tu sais que ton corps te parle.
             </td>
           </tr>
           <tr>
-            <td class="body-copy tx-ink" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.65; color:#1e1d1d; padding-bottom:8px;">
+            <td class="body-copy tx-ink" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.65; color:#1e1d1d; padding-bottom:30px;">
               Je connais cette fatigue-l&agrave;. Celle de chercher seul.e, de lire des dizaines d&rsquo;articles qui se contredisent, de ressortir d&rsquo;un rendez-vous m&eacute;dical avec plus de questions que de r&eacute;ponses.
             </td>
           </tr>
@@ -149,49 +161,49 @@
       </td>
     </tr>
 
-    <!-- ============ PULL QUOTE ============ -->
+    <tr><td bgcolor="#0f3626" style="background-color:#0f3626; padding:0; line-height:0; font-size:0;"><table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td></tr></table></td></tr>
+
+    <!-- ============ PULL QUOTE (page pleine) ============ -->
     <tr>
-      <td class="bg-white px" bgcolor="#ffffff" style="background-color:#ffffff; padding:22px 40px 38px 40px;">
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="bg-green" style="background-color:#0f3626;">
+      <td class="bg-green" bgcolor="#0f3626" style="background-color:#0f3626; padding:44px 40px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
-            <td class="card-pad" align="center" style="padding:32px 34px 28px 34px;">
-              <table role="presentation" cellpadding="0" cellspacing="0" border="0">
-                <tr>
-                  <td align="center" class="display" style="font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:44px; line-height:1; color:#e0a42e; padding-bottom:6px;">
-                    &ldquo;
-                  </td>
-                </tr>
-                <tr>
-                  <td align="center" class="display tx-cream" style="font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:700; font-size:21px; line-height:1.4; color:#fef2c9; text-align:center;">
-                    Tu es au bon endroit, et tu n&rsquo;as plus besoin de chercher seul.e.
-                  </td>
-                </tr>
-              </table>
+            <td align="center" class="display" style="font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:46px; line-height:1; color:#e0a42e; padding-bottom:6px;">
+              &ldquo;
+            </td>
+          </tr>
+          <tr>
+            <td align="center" class="display tx-cream" style="font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:700; font-size:22px; line-height:1.4; color:#fef2c9; text-align:center;">
+              Tu es au bon endroit, et tu n&rsquo;as plus besoin de chercher seul.e.
             </td>
           </tr>
         </table>
       </td>
     </tr>
 
-    <!-- ============ PILIERS INTRO ============ -->
+    <tr><td bgcolor="#ffffff" style="background-color:#ffffff; padding:0; line-height:0; font-size:0;"><table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #0f3626;">&nbsp;</div></td></tr></table></td></tr>
+
+    <!-- ============ CHAPITRE II ============ -->
     <tr>
-      <td class="bg-white px" bgcolor="#ffffff" style="background-color:#ffffff; padding:0 40px 6px 40px;">
+      <td class="bg-white px" bgcolor="#ffffff" style="background-color:#ffffff; padding:38px 40px 6px 40px;">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
-            <td style="padding-bottom:6px;">
+            <td style="padding-bottom:18px;">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0">
                 <tr>
-                  <td style="width:22px; height:3px; background-color:#e0a42e; font-size:0; line-height:0;">&nbsp;</td>
-                  <td style="width:8px;">&nbsp;</td>
-                  <td class="display" style="font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:700; font-size:20px; color:#0f3626;">
-                    Nos cinq piliers, cinq chemins
+                  <td width="52" valign="middle">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="tilt-r"><tr>
+                      <td width="44" height="44" align="center" valign="middle" bgcolor="#5d1808" style="width:44px; height:44px; background-color:#5d1808; font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:18px; color:#fef2c9;">II</td>
+                    </tr></table>
                   </td>
+                  <td width="12">&nbsp;</td>
+                  <td valign="middle" class="subtitle" style="font-family:'Montserrat', Arial, Helvetica, sans-serif; font-weight:700; font-size:11px; letter-spacing:2px; color:#5d1808; text-transform:uppercase;">Chapitre II<br><span class="display" style="font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:700; font-size:19px; letter-spacing:0; color:#0f3626; text-transform:none;">Les cinq chemins</span></td>
                 </tr>
               </table>
             </td>
           </tr>
           <tr>
-            <td class="body-copy tx-ink" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.65; color:#1e1d1d; padding-bottom:6px; padding-top:10px;">
+            <td class="body-copy tx-ink" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.65; color:#1e1d1d; padding-bottom:26px;">
               Dans les prochains jours, je vais te les pr&eacute;senter un par un, doucement, pour que tu trouves celui qui te correspond.
             </td>
           </tr>
@@ -199,106 +211,118 @@
       </td>
     </tr>
 
-    <!-- ============ PILIERS ============ -->
+    <!-- ============ CHEMIN (piliers) ============ -->
     <tr>
-      <td class="bg-white px" bgcolor="#ffffff" style="background-color:#ffffff; padding:14px 40px 8px 40px;">
+      <td class="bg-white px" bgcolor="#ffffff" style="background-color:#ffffff; padding:0 40px 10px 40px;">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
 
           <!-- 01 Anémie — doré -->
-          <tr><td style="padding-bottom:12px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#fef2c9;">
-              <tr>
-                <td width="14">&nbsp;</td>
-                <td width="46" valign="middle" style="padding:14px 0;">
-                  <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
-                    <td width="34" height="34" align="center" bgcolor="#e0a42e" style="width:34px; height:34px; line-height:34px; background-color:#e0a42e; font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:13px; color:#1e1d1d;">01</td>
-                  </tr></table>
-                </td>
-                <td class="card-pad" style="padding:14px 18px 14px 4px;">
-                  <span class="body-copy" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:1.5; color:#1e1d1d;"><strong>An&eacute;mie</strong>, pour cette fatigue qui ne passe jamais vraiment.</span>
-                </td>
-              </tr>
-            </table>
-          </td></tr>
+          <tr>
+            <td width="34" valign="top" style="padding-top:2px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+                <td width="30" height="30" align="center" valign="middle" bgcolor="#e0a42e" style="width:30px; height:30px; background-color:#e0a42e; font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:12px; color:#1e1d1d;">01</td>
+              </tr></table>
+            </td>
+            <td valign="top" style="padding:2px 0 4px 14px;">
+              <span class="body-copy" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:1.5; color:#1e1d1d;"><strong>An&eacute;mie</strong>, pour cette fatigue qui ne passe jamais vraiment.</span>
+            </td>
+          </tr>
+          <tr>
+            <td width="34" style="padding:0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="2" bgcolor="#e0a42e" style="background-color:#e0a42e; font-size:0; line-height:0;">&nbsp;</td><td>&nbsp;</td></tr></table></td>
+            <td style="padding:2px 0 18px 14px;">&nbsp;</td>
+          </tr>
 
           <!-- 02 Diabète — rouge -->
-          <tr><td style="padding-bottom:12px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#fef2c9;">
-              <tr>
-                <td width="14">&nbsp;</td>
-                <td width="46" valign="middle" style="padding:14px 0;">
-                  <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
-                    <td width="34" height="34" align="center" bgcolor="#5d1808" style="width:34px; height:34px; line-height:34px; background-color:#5d1808; font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:13px; color:#fef2c9;">02</td>
-                  </tr></table>
-                </td>
-                <td class="card-pad" style="padding:14px 18px 14px 4px;">
-                  <span class="body-copy" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:1.5; color:#1e1d1d;"><strong>Diab&egrave;te</strong>, pour apprivoiser ton sucre sans te priver de tout.</span>
-                </td>
-              </tr>
-            </table>
-          </td></tr>
+          <tr>
+            <td width="34" valign="top" style="padding-top:2px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+                <td width="30" height="30" align="center" valign="middle" bgcolor="#5d1808" style="width:30px; height:30px; background-color:#5d1808; font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:12px; color:#fef2c9;">02</td>
+              </tr></table>
+            </td>
+            <td valign="top" style="padding:2px 0 4px 14px;">
+              <span class="body-copy" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:1.5; color:#1e1d1d;"><strong>Diab&egrave;te</strong>, pour apprivoiser ton sucre sans te priver de tout.</span>
+            </td>
+          </tr>
+          <tr>
+            <td width="34" style="padding:0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="2" bgcolor="#5d1808" style="background-color:#5d1808; font-size:0; line-height:0;">&nbsp;</td><td>&nbsp;</td></tr></table></td>
+            <td style="padding:2px 0 18px 14px;">&nbsp;</td>
+          </tr>
 
           <!-- 03 Sans gluten — vert -->
-          <tr><td style="padding-bottom:12px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#fef2c9;">
-              <tr>
-                <td width="14">&nbsp;</td>
-                <td width="46" valign="middle" style="padding:14px 0;">
-                  <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
-                    <td width="34" height="34" align="center" bgcolor="#0f3626" style="width:34px; height:34px; line-height:34px; background-color:#0f3626; font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:13px; color:#fef2c9;">03</td>
-                  </tr></table>
-                </td>
-                <td class="card-pad" style="padding:14px 18px 14px 4px;">
-                  <span class="body-copy" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:1.5; color:#1e1d1d;"><strong>Sans gluten</strong>, pour manger sans avoir peur de chaque repas.</span>
-                </td>
-              </tr>
-            </table>
-          </td></tr>
+          <tr>
+            <td width="34" valign="top" style="padding-top:2px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+                <td width="30" height="30" align="center" valign="middle" bgcolor="#0f3626" style="width:30px; height:30px; background-color:#0f3626; font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:12px; color:#fef2c9;">03</td>
+              </tr></table>
+            </td>
+            <td valign="top" style="padding:2px 0 4px 14px;">
+              <span class="body-copy" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:1.5; color:#1e1d1d;"><strong>Sans gluten</strong>, pour manger sans avoir peur de chaque repas.</span>
+            </td>
+          </tr>
+          <tr>
+            <td width="34" style="padding:0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="2" bgcolor="#0f3626" style="background-color:#0f3626; font-size:0; line-height:0;">&nbsp;</td><td>&nbsp;</td></tr></table></td>
+            <td style="padding:2px 0 18px 14px;">&nbsp;</td>
+          </tr>
 
           <!-- 04 Anti-inflammatoire — doré -->
-          <tr><td style="padding-bottom:12px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#fef2c9;">
-              <tr>
-                <td width="14">&nbsp;</td>
-                <td width="46" valign="middle" style="padding:14px 0;">
-                  <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
-                    <td width="34" height="34" align="center" bgcolor="#e0a42e" style="width:34px; height:34px; line-height:34px; background-color:#e0a42e; font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:13px; color:#1e1d1d;">04</td>
-                  </tr></table>
-                </td>
-                <td class="card-pad" style="padding:14px 18px 14px 4px;">
-                  <span class="body-copy" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:1.5; color:#1e1d1d;"><strong>Anti-inflammatoire</strong>, pour apaiser un corps qui s&rsquo;exprime depuis trop longtemps.</span>
-                </td>
-              </tr>
-            </table>
-          </td></tr>
+          <tr>
+            <td width="34" valign="top" style="padding-top:2px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+                <td width="30" height="30" align="center" valign="middle" bgcolor="#e0a42e" style="width:30px; height:30px; background-color:#e0a42e; font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:12px; color:#1e1d1d;">04</td>
+              </tr></table>
+            </td>
+            <td valign="top" style="padding:2px 0 4px 14px;">
+              <span class="body-copy" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:1.5; color:#1e1d1d;"><strong>Anti-inflammatoire</strong>, pour apaiser un corps qui s&rsquo;exprime depuis trop longtemps.</span>
+            </td>
+          </tr>
+          <tr>
+            <td width="34" style="padding:0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="2" bgcolor="#e0a42e" style="background-color:#e0a42e; font-size:0; line-height:0;">&nbsp;</td><td>&nbsp;</td></tr></table></td>
+            <td style="padding:2px 0 18px 14px;">&nbsp;</td>
+          </tr>
 
           <!-- 05 Hypertension — rouge -->
-          <tr><td style="padding-bottom:24px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#fef2c9;">
-              <tr>
-                <td width="14">&nbsp;</td>
-                <td width="46" valign="middle" style="padding:14px 0;">
-                  <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
-                    <td width="34" height="34" align="center" bgcolor="#5d1808" style="width:34px; height:34px; line-height:34px; background-color:#5d1808; font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:13px; color:#fef2c9;">05</td>
-                  </tr></table>
-                </td>
-                <td class="card-pad" style="padding:14px 18px 14px 4px;">
-                  <span class="body-copy" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:1.5; color:#1e1d1d;"><strong>Hypertension</strong>, pour cuisiner autrement, sans sel cach&eacute; nulle part.</span>
-                </td>
-              </tr>
-            </table>
-          </td></tr>
+          <tr>
+            <td width="34" valign="top" style="padding-top:2px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+                <td width="30" height="30" align="center" valign="middle" bgcolor="#5d1808" style="width:30px; height:30px; background-color:#5d1808; font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:12px; color:#fef2c9;">05</td>
+              </tr></table>
+            </td>
+            <td valign="top" style="padding:2px 0 4px 14px;">
+              <span class="body-copy" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:1.5; color:#1e1d1d;"><strong>Hypertension</strong>, pour cuisiner autrement, sans sel cach&eacute; nulle part.</span>
+            </td>
+          </tr>
+          <tr>
+            <td width="34" style="padding:0;">&nbsp;</td>
+            <td style="padding:2px 0 30px 14px;">&nbsp;</td>
+          </tr>
 
         </table>
       </td>
     </tr>
 
-    <!-- ============ TRANSITION ============ -->
+    <tr><td bgcolor="#fef2c9" style="background-color:#fef2c9; padding:0; line-height:0; font-size:0;"><table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #ffffff;">&nbsp;</div></td></tr></table></td></tr>
+
+    <!-- ============ CHAPITRE III ============ -->
     <tr>
-      <td class="bg-white px" bgcolor="#ffffff" style="background-color:#ffffff; padding:0 40px 36px 40px;">
+      <td class="bg-cream px" bgcolor="#fef2c9" style="background-color:#fef2c9; padding:38px 40px 8px 40px;">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
-            <td class="body-copy tx-ink" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.65; color:#1e1d1d;">
+            <td style="padding-bottom:18px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td width="52" valign="middle">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="tilt-l"><tr>
+                      <td width="44" height="44" align="center" valign="middle" bgcolor="#0f3626" style="width:44px; height:44px; background-color:#0f3626; font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:18px; color:#fef2c9;">III</td>
+                    </tr></table>
+                  </td>
+                  <td width="12">&nbsp;</td>
+                  <td valign="middle" class="subtitle" style="font-family:'Montserrat', Arial, Helvetica, sans-serif; font-weight:700; font-size:11px; letter-spacing:2px; color:#5d1808; text-transform:uppercase;">Chapitre III<br><span class="display" style="font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:700; font-size:19px; letter-spacing:0; color:#0f3626; text-transform:none;">Le cadeau cach&eacute;</span></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="body-copy tx-ink" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.65; color:#1e1d1d; padding-bottom:30px;">
               En attendant, je voulais juste te souhaiter la bienvenue, et t&rsquo;offrir un premier geste.
             </td>
           </tr>
@@ -306,18 +330,24 @@
       </td>
     </tr>
 
-    <!-- ============ PROMO CODE — TICKET ============ -->
+    <!-- ============ PROMO CODE — sticker cadeau ============ -->
     <tr>
-      <td class="bg-cream px" bgcolor="#fef2c9" style="background-color:#fef2c9; padding:36px 40px 8px 40px;" align="center">
+      <td class="bg-cream px" bgcolor="#fef2c9" style="background-color:#fef2c9; padding:0 40px 8px 40px;" align="center">
         <!--[if mso]>
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td>
         <![endif]-->
-        <table role="presentation" class="ticket" cellpadding="0" cellspacing="0" border="0" style="border:2px solid #e0a42e; background-color:#ffffff;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
           <tr>
-            <td align="center" style="padding:24px 42px;">
-              <div class="subtitle" style="font-family:'Montserrat', Arial, Helvetica, sans-serif; font-weight:700; font-size:11px; letter-spacing:1.5px; color:#5d1808; text-transform:uppercase; padding-bottom:8px;">Ton cadeau de bienvenue</div>
-              <div class="display code-text" style="font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:26px; letter-spacing:4px; color:#1e1d1d; padding-bottom:6px;">BIENVENUE10</div>
-              <div class="subtitle" style="font-family:'Montserrat', Arial, Helvetica, sans-serif; font-weight:600; font-size:12px; color:#42413f;">&minus;10% sur ta premi&egrave;re commande</div>
+            <td bgcolor="#5d1808" style="background-color:#5d1808; padding:0 10px 10px 0;">
+              <table role="presentation" class="tilt-s" cellpadding="0" cellspacing="0" border="0" style="border:3px solid #e0a42e; background-color:#ffffff;">
+                <tr>
+                  <td align="center" style="padding:24px 42px;">
+                    <div class="subtitle" style="font-family:'Montserrat', Arial, Helvetica, sans-serif; font-weight:700; font-size:11px; letter-spacing:1.5px; color:#5d1808; text-transform:uppercase; padding-bottom:8px;">Ton cadeau de bienvenue</div>
+                    <div class="display code-text" style="font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:26px; letter-spacing:4px; color:#1e1d1d; padding-bottom:6px;">BIENVENUE10</div>
+                    <div class="subtitle" style="font-family:'Montserrat', Arial, Helvetica, sans-serif; font-weight:600; font-size:12px; color:#42413f;">&minus;10% sur ta premi&egrave;re commande</div>
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
         </table>
@@ -329,7 +359,7 @@
 
     <!-- ============ CTA BUTTON ============ -->
     <tr>
-      <td class="bg-cream px" bgcolor="#fef2c9" style="background-color:#fef2c9; padding:30px 40px 44px 40px;" align="center">
+      <td class="bg-cream px" bgcolor="#fef2c9" style="background-color:#fef2c9; padding:32px 40px 44px 40px;" align="center">
         <!--[if mso]>
         <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://www.afk-epicerie.com/" style="height:52px;v-text-anchor:middle;width:300px;" arcsize="0%" stroke="f" fillcolor="#e0a42e">
         <w:anchorlock/>
@@ -347,6 +377,8 @@
         <!--<![endif]-->
       </td>
     </tr>
+
+    <tr><td bgcolor="#ffffff" style="background-color:#ffffff; padding:0; line-height:0; font-size:0;"><table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td><td width="20" style="width:20px; padding:0; font-size:0; line-height:0; mso-line-height-rule:exactly;"><div style="width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:12px solid #fef2c9;">&nbsp;</div></td></tr></table></td></tr>
 
     <!-- ============ SIGN-OFF ============ -->
     <tr>
