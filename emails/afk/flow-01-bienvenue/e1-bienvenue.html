@@ -31,6 +31,9 @@
   .subtitle  { font-family: 'Montserrat', Arial, Helvetica, sans-serif; }
   .body-copy { font-family: Arial, Helvetica, sans-serif; }
 
+  .stamp   { transform: rotate(-7deg); -webkit-transform: rotate(-7deg); -ms-transform: rotate(-7deg); }
+  .ticket  { transform: rotate(-1.4deg); -webkit-transform: rotate(-1.4deg); -ms-transform: rotate(-1.4deg); }
+
   @media screen and (max-width: 600px) {
     .wrap { width: 100% !important; }
     .px { padding-left: 20px !important; padding-right: 20px !important; }
@@ -79,29 +82,35 @@
 
     <!-- ============ HERO ============ -->
     <tr>
-      <td class="bg-cream hero-pad" bgcolor="#fef2c9" style="background-color:#fef2c9; padding:48px 40px 36px 40px;">
+      <td class="bg-cream hero-pad" bgcolor="#fef2c9" style="background-color:#fef2c9; padding:52px 40px 34px 40px;">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
-            <td align="center" style="padding-bottom:14px;">
-              <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+            <td align="center" style="padding-bottom:22px;">
+              <!--[if mso]>
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td>
+              <![endif]-->
+              <table role="presentation" class="stamp" cellpadding="0" cellspacing="0" border="0" style="border:2px dashed #5d1808; border-radius:50%;">
                 <tr>
-                  <td class="subtitle" style="background-color:#5d1808; border-radius:20px; padding:6px 16px;">
-                    <span style="font-family:'Montserrat', Arial, Helvetica, sans-serif; font-weight:700; font-size:10px; letter-spacing:2px; color:#fef2c9; text-transform:uppercase;">Bienvenue dans la Brigade</span>
+                  <td width="118" height="118" align="center" valign="middle" style="width:118px; height:118px; border-radius:50%; background-color:#e0a42e;">
+                    <span class="display" style="font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:17px; line-height:1.2; color:#1e1d1d;">Bienvenue<br>&#10022;&nbsp;AFK&nbsp;&#10022;</span>
                   </td>
                 </tr>
               </table>
+              <!--[if mso]>
+              </td></tr></table>
+              <![endif]-->
             </td>
           </tr>
           <tr>
             <td align="center">
               <h1 class="display h1 tx-ink" style="margin:0; font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:28px; line-height:1.26; color:#1e1d1d; text-align:center;">
-                Tu es au bon endroit,<br>et tu n&rsquo;es plus seule
+                Tu es au bon endroit,<br>et tu n&rsquo;es plus <span style="color:#e0a42e;">seule</span>
               </h1>
             </td>
           </tr>
           <tr>
-            <td align="center" style="padding-top:10px;">
-              <span style="display:inline-block; width:44px; height:4px; border-radius:2px; background-color:#e0a42e; font-size:0; line-height:0;">&nbsp;</span>
+            <td align="center" style="padding-top:14px;">
+              <span class="subtitle" style="font-family:'Montserrat', Arial, Helvetica, sans-serif; font-weight:700; font-size:16px; letter-spacing:6px; color:#5d1808;">&middot;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&middot;</span>
             </td>
           </tr>
           <tr>
@@ -117,7 +126,7 @@
 
     <!-- ============ BODY ============ -->
     <tr>
-      <td class="bg-white px" bgcolor="#ffffff" style="background-color:#ffffff; padding:40px 40px 8px 40px;">
+      <td class="bg-white px" bgcolor="#ffffff" style="background-color:#ffffff; padding:40px 40px 6px 40px;">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
 
           <tr>
@@ -131,16 +140,43 @@
             </td>
           </tr>
           <tr>
-            <td class="body-copy tx-ink" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.65; color:#1e1d1d; padding-bottom:16px;">
+            <td class="body-copy tx-ink" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.65; color:#1e1d1d; padding-bottom:8px;">
               On conna&icirc;t cette fatigue-l&agrave;. Celle de chercher seule, de lire des dizaines d&rsquo;articles qui se contredisent, de ressortir d&rsquo;un rendez-vous m&eacute;dical avec plus de questions que de r&eacute;ponses.
             </td>
           </tr>
+
+        </table>
+      </td>
+    </tr>
+
+    <!-- ============ PULL QUOTE ============ -->
+    <tr>
+      <td class="bg-white px" bgcolor="#ffffff" style="background-color:#ffffff; padding:22px 40px 38px 40px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="bg-green" style="background-color:#0f3626; border-radius:14px;">
           <tr>
-            <td class="body-copy" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.65; color:#1e1d1d; font-weight:bold; padding-bottom:28px;">
-              Alors on veut te dire une chose simple&nbsp;: tu es au bon endroit, et tu n&rsquo;as plus besoin de chercher seule.
+            <td class="card-pad" align="center" style="padding:32px 34px 28px 34px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td align="center" class="display" style="font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:44px; line-height:1; color:#e0a42e; padding-bottom:6px;">
+                    &ldquo;
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" class="display tx-cream" style="font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:700; font-size:21px; line-height:1.4; color:#fef2c9; text-align:center;">
+                    Tu es au bon endroit, et tu n&rsquo;as plus besoin de chercher seule.
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
+        </table>
+      </td>
+    </tr>
 
+    <!-- ============ PILIERS INTRO ============ -->
+    <tr>
+      <td class="bg-white px" bgcolor="#ffffff" style="background-color:#ffffff; padding:0 40px 6px 40px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
             <td style="padding-bottom:6px;">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0">
@@ -168,51 +204,85 @@
       <td class="bg-white px" bgcolor="#ffffff" style="background-color:#ffffff; padding:14px 40px 8px 40px;">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
 
-          <tr><td style="padding-bottom:10px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+          <!-- 01 Anémie — doré -->
+          <tr><td style="padding-bottom:12px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#fef2c9; border-radius:10px;">
               <tr>
-                <td width="4" bgcolor="#5d1808" style="background-color:#5d1808;">&nbsp;</td>
-                <td class="card-pad" bgcolor="#fef2c9" style="background-color:#fef2c9; padding:13px 18px;">
+                <td width="14">&nbsp;</td>
+                <td width="46" valign="middle" style="padding:14px 0;">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+                    <td width="34" height="34" align="center" bgcolor="#e0a42e" style="width:34px; height:34px; line-height:34px; border-radius:50%; background-color:#e0a42e; font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:13px; color:#1e1d1d;">01</td>
+                  </tr></table>
+                </td>
+                <td class="card-pad" style="padding:14px 18px 14px 4px;">
                   <span class="body-copy" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:1.5; color:#1e1d1d;"><strong>An&eacute;mie</strong>, pour cette fatigue qui ne passe jamais vraiment.</span>
                 </td>
               </tr>
             </table>
           </td></tr>
-          <tr><td style="padding-bottom:10px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+
+          <!-- 02 Diabète — rouge -->
+          <tr><td style="padding-bottom:12px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#fef2c9; border-radius:10px;">
               <tr>
-                <td width="4" bgcolor="#5d1808" style="background-color:#5d1808;">&nbsp;</td>
-                <td class="card-pad" bgcolor="#fef2c9" style="background-color:#fef2c9; padding:13px 18px;">
+                <td width="14">&nbsp;</td>
+                <td width="46" valign="middle" style="padding:14px 0;">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+                    <td width="34" height="34" align="center" bgcolor="#5d1808" style="width:34px; height:34px; line-height:34px; border-radius:50%; background-color:#5d1808; font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:13px; color:#fef2c9;">02</td>
+                  </tr></table>
+                </td>
+                <td class="card-pad" style="padding:14px 18px 14px 4px;">
                   <span class="body-copy" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:1.5; color:#1e1d1d;"><strong>Diab&egrave;te</strong>, pour apprivoiser ton sucre sans te priver de tout.</span>
                 </td>
               </tr>
             </table>
           </td></tr>
-          <tr><td style="padding-bottom:10px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+
+          <!-- 03 Sans gluten — vert -->
+          <tr><td style="padding-bottom:12px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#fef2c9; border-radius:10px;">
               <tr>
-                <td width="4" bgcolor="#5d1808" style="background-color:#5d1808;">&nbsp;</td>
-                <td class="card-pad" bgcolor="#fef2c9" style="background-color:#fef2c9; padding:13px 18px;">
+                <td width="14">&nbsp;</td>
+                <td width="46" valign="middle" style="padding:14px 0;">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+                    <td width="34" height="34" align="center" bgcolor="#0f3626" style="width:34px; height:34px; line-height:34px; border-radius:50%; background-color:#0f3626; font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:13px; color:#fef2c9;">03</td>
+                  </tr></table>
+                </td>
+                <td class="card-pad" style="padding:14px 18px 14px 4px;">
                   <span class="body-copy" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:1.5; color:#1e1d1d;"><strong>Sans gluten</strong>, pour manger sans avoir peur de chaque repas.</span>
                 </td>
               </tr>
             </table>
           </td></tr>
-          <tr><td style="padding-bottom:10px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+
+          <!-- 04 Anti-inflammatoire — doré -->
+          <tr><td style="padding-bottom:12px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#fef2c9; border-radius:10px;">
               <tr>
-                <td width="4" bgcolor="#5d1808" style="background-color:#5d1808;">&nbsp;</td>
-                <td class="card-pad" bgcolor="#fef2c9" style="background-color:#fef2c9; padding:13px 18px;">
+                <td width="14">&nbsp;</td>
+                <td width="46" valign="middle" style="padding:14px 0;">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+                    <td width="34" height="34" align="center" bgcolor="#e0a42e" style="width:34px; height:34px; line-height:34px; border-radius:50%; background-color:#e0a42e; font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:13px; color:#1e1d1d;">04</td>
+                  </tr></table>
+                </td>
+                <td class="card-pad" style="padding:14px 18px 14px 4px;">
                   <span class="body-copy" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:1.5; color:#1e1d1d;"><strong>Anti-inflammatoire</strong>, pour apaiser un corps qui s&rsquo;exprime depuis trop longtemps.</span>
                 </td>
               </tr>
             </table>
           </td></tr>
+
+          <!-- 05 Hypertension — rouge -->
           <tr><td style="padding-bottom:24px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#fef2c9; border-radius:10px;">
               <tr>
-                <td width="4" bgcolor="#5d1808" style="background-color:#5d1808;">&nbsp;</td>
-                <td class="card-pad" bgcolor="#fef2c9" style="background-color:#fef2c9; padding:13px 18px;">
+                <td width="14">&nbsp;</td>
+                <td width="46" valign="middle" style="padding:14px 0;">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+                    <td width="34" height="34" align="center" bgcolor="#5d1808" style="width:34px; height:34px; line-height:34px; border-radius:50%; background-color:#5d1808; font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:13px; color:#fef2c9;">05</td>
+                  </tr></table>
+                </td>
+                <td class="card-pad" style="padding:14px 18px 14px 4px;">
                   <span class="body-copy" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:1.5; color:#1e1d1d;"><strong>Hypertension</strong>, pour cuisiner autrement, sans sel cach&eacute; nulle part.</span>
                 </td>
               </tr>
@@ -225,7 +295,7 @@
 
     <!-- ============ TRANSITION ============ -->
     <tr>
-      <td class="bg-white px" bgcolor="#ffffff" style="background-color:#ffffff; padding:0 40px 32px 40px;">
+      <td class="bg-white px" bgcolor="#ffffff" style="background-color:#ffffff; padding:0 40px 36px 40px;">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
             <td class="body-copy tx-ink" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.65; color:#1e1d1d;">
@@ -236,45 +306,41 @@
       </td>
     </tr>
 
-    <!-- ============ PROMO CODE ============ -->
+    <!-- ============ PROMO CODE — TICKET ============ -->
     <tr>
-      <td class="bg-cream px" bgcolor="#fef2c9" style="background-color:#fef2c9; padding:0 40px 8px 40px;">
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+      <td class="bg-cream px" bgcolor="#fef2c9" style="background-color:#fef2c9; padding:36px 40px 8px 40px;" align="center">
+        <!--[if mso]>
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td>
+        <![endif]-->
+        <table role="presentation" class="ticket" cellpadding="0" cellspacing="0" border="0" style="border:2px dashed #e0a42e; border-radius:16px; background-color:#ffffff;">
           <tr>
-            <td class="body-copy tx-ink" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.65; color:#1e1d1d; padding-bottom:20px; padding-top:40px;" align="center">
-              <strong>&minus;10% sur ta premi&egrave;re commande</strong>
+            <td align="center" style="padding:24px 42px;">
+              <div class="subtitle" style="font-family:'Montserrat', Arial, Helvetica, sans-serif; font-weight:700; font-size:11px; letter-spacing:1.5px; color:#5d1808; text-transform:uppercase; padding-bottom:8px;">&#9986;&nbsp; Ton cadeau de bienvenue</div>
+              <div class="display code-text" style="font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:26px; letter-spacing:4px; color:#1e1d1d; padding-bottom:6px;">BIENVENUE10</div>
+              <div class="subtitle" style="font-family:'Montserrat', Arial, Helvetica, sans-serif; font-weight:600; font-size:12px; color:#42413f;">&minus;10% sur ta premi&egrave;re commande</div>
             </td>
           </tr>
         </table>
-      </td>
-    </tr>
-    <tr>
-      <td class="bg-cream px" bgcolor="#fef2c9" style="background-color:#fef2c9; padding:0 40px 12px 40px;" align="center">
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border:2px dashed #e0a42e; border-radius:14px; background-color:#ffffff;">
-          <tr>
-            <td align="center" style="padding:22px 40px;">
-              <div class="subtitle" style="font-family:'Montserrat', Arial, Helvetica, sans-serif; font-weight:700; font-size:11px; letter-spacing:2px; color:#5d1808; text-transform:uppercase; padding-bottom:8px;">Ton code</div>
-              <div class="display code-text" style="font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:800; font-size:26px; letter-spacing:4px; color:#1e1d1d;">BIENVENUE10</div>
-            </td>
-          </tr>
-        </table>
+        <!--[if mso]>
+        </td></tr></table>
+        <![endif]-->
       </td>
     </tr>
 
     <!-- ============ CTA BUTTON ============ -->
     <tr>
-      <td class="bg-cream px" bgcolor="#fef2c9" style="background-color:#fef2c9; padding:28px 40px 44px 40px;" align="center">
+      <td class="bg-cream px" bgcolor="#fef2c9" style="background-color:#fef2c9; padding:30px 40px 44px 40px;" align="center">
         <!--[if mso]>
         <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://www.afk-epicerie.com/" style="height:52px;v-text-anchor:middle;width:300px;" arcsize="0%" stroke="f" fillcolor="#e0a42e">
         <w:anchorlock/>
-        <center style="color:#1e1d1d;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">D&eacute;couvrir la s&eacute;lection</center>
+        <center style="color:#1e1d1d;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">D&eacute;couvrir la s&eacute;lection &rarr;</center>
         </v:roundrect>
         <![endif]-->
         <!--[if !mso]><!-->
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="cta-btn">
           <tr>
             <td align="center" bgcolor="#e0a42e" style="background-color:#e0a42e;">
-              <a href="https://www.afk-epicerie.com/" target="_blank" class="display" style="display:inline-block; padding:16px 34px; font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:700; font-size:16px; color:#1e1d1d; text-decoration:none;">D&eacute;couvrir la s&eacute;lection</a>
+              <a href="https://www.afk-epicerie.com/" target="_blank" class="display" style="display:inline-block; padding:16px 34px; font-family:'League Spartan', Arial, Helvetica, sans-serif; font-weight:700; font-size:16px; color:#1e1d1d; text-decoration:none;">D&eacute;couvrir la s&eacute;lection &rarr;</a>
             </td>
           </tr>
         </table>
