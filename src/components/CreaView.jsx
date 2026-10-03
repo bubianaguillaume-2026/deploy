@@ -22,6 +22,7 @@ const getPlatform = id => PLATFORMS.find(p => p.id === id) || PLATFORMS[0]
 
 export default function CreaView({ data, updateData, cycleData }) {
   const [tab, setTab] = useState('pipeline')
+  const [copiedForBig, setCopiedForBig] = useState(false)
 
   const [pipeForm, setPipeForm] = useState({
     title: '',
@@ -84,6 +85,24 @@ export default function CreaView({ data, updateData, cycleData }) {
 
   const today = new Date().toISOString().slice(0, 10)
 
+  // Envoi vers B.I.G : copie le pipeline et le planning dans le presse-papiers
+  const copyForBig = async () => {
+    const payload = JSON.stringify({
+      source: 'side-hustler-crea',
+      version: 1,
+      exportedAt: new Date().toISOString(),
+      pipeline,
+      calendar
+    })
+    try {
+      await navigator.clipboard.writeText(payload)
+      setCopiedForBig(true)
+      setTimeout(() => setCopiedForBig(false), 2500)
+    } catch {
+      window.prompt('Copie ce texte, puis colle-le dans B.I.G (page Contenus) :', payload)
+    }
+  }
+
   const TABS = [
     { key: 'pipeline', label: 'Pipeline' },
     { key: 'calendar', label: 'Planning éditorial' }
@@ -101,6 +120,18 @@ export default function CreaView({ data, updateData, cycleData }) {
       </div>
 
       <CycleWidget cycleData={cycleData} mode="crea" />
+
+      <div className="card mb-16 flex-between" style={{ gap: 16, flexWrap: 'wrap' }}>
+        <div>
+          <div className="section-title">Envoyer vers B.I.G</div>
+          <div style={{ fontSize: 13, color: 'var(--text-muted)', marginTop: 4 }}>
+            Copie ton pipeline et ton planning, puis colle-les dans B.I.G, page Contenus.
+          </div>
+        </div>
+        <button type="button" className="btn btn-primary btn-sm" onClick={copyForBig}>
+          {copiedForBig ? 'Copié' : 'Copier pour B.I.G'}
+        </button>
+      </div>
 
       <div className="tab-bar">
         {TABS.map(t => (
